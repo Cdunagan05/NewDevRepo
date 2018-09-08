@@ -9,7 +9,30 @@ Most recent revision:
     <title>Chase Dunagan's Portfolio</title>
     <link href="teststyles.css" rel="stylesheet" type="text/css" />
     <style>
-
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+      table, th, td {
+        border: 1px solid #0d1f2d;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #546a7b;
+        color: #f2eded;
+      }
+      tr:nth-child(odd) {
+        background-color: #e4c3ad;
+      }
     </style>
   </head>
 
@@ -38,26 +61,30 @@ Most recent revision:
       <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Picture of a tall intimidating mountain" width="200px" />
       <table>
         <caption>Employment History</caption>
-        <tr>
-          <th>Years of Employment</th>
-          <th>Title</th>
-          <th>Company</th>
-        </tr>
-        <tr>
-          <td>2017-2018</td>
-          <td>Assistant</td>
-          <td>Maniscalco Residence</td>
-        </tr>
-        <tr>
-          <td>2016-2017</td>
-          <td>Student</td>
-          <td>Turing School</td>
-        </tr>
-        <tr>
-          <td>2012-2014</td>
-          <td>Teacher/Tutor</td>
-          <td>Linda-Mood Bell</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Years of Employment</th>
+            <th>Title</th>
+            <th>Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2017-2018</td>
+            <td>Assistant</td>
+            <td>Maniscalco Residence</td>
+          </tr>
+          <tr>
+            <td>2016-2017</td>
+            <td>Student</td>
+            <td>Turing School</td>
+          </tr>
+          <tr>
+            <td>2012-2014</td>
+            <td>Teacher/Tutor</td>
+            <td>Linda-Mood Bell</td>
+          </tr>
+        </tbody>
       </table>
     </article>
     <article>
