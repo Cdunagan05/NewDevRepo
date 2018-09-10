@@ -17,3 +17,19 @@ footer {
 .home-body {
   background-color: #efe6ff;
 }
+
+nav a {
+  color: #000d1a;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav a:visited {
+  color: #ff8080;
+}
+
+nav a:active {
+  text-decoration: none;
+}

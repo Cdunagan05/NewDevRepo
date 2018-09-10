@@ -6,7 +6,9 @@
     <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <style>
-
+      .required {
+        font-weight: bold;
+      }
     </style>
   </head>
 
@@ -21,14 +23,14 @@
     </nav>
     <hr />
     <form action="submit.html" method="POST">
-      <label for="name">Name: </label>
+      <label for="name" class="required">Name: </label>
       <input type="text" id="name" name="name"><br />
-      <label for="email">Email: </label>
+      <label for="email" class="required">Email: </label>
       <input type="text" id="email" name="email"><br />
-      <label for="phone">Phone: </label>
+      <label for="phone" class="required">Phone: </label>
       <input type="text" id="phone" name="phone"><br />
 
-      <label for="inquiry">Reason for Inquiry</label>
+      <label for="inquiry" class="required">Reason for Inquiry</label>
       <select id="inquiry" name="inquiry">
         <option value="default" selected>Catering</option>
         <option value="party">Private Party</option>
@@ -45,7 +47,7 @@
       <input type="radio" id="contact-yes" name="have-you-been" value="contact-yes">
       <label for="contact-yes">Yes</label><br />
 
-      <label for="contact">Best days to contact you: </label>
+      <label for="contact" class="required">Best days to contact you: </label>
       <input type="checkbox" id="monday" name="contact" value="monday">
       <label for="monday">M</label>
       <input type="checkbox" id="tuesday" name="contact" value="tuesday">
