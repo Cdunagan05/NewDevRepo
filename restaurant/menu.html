@@ -2,11 +2,45 @@
 <html lang="en">
   <head>
     <title>Menu</title>
+
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <style>
+
+    b {
+      font-size: 1.2em;
+    }
+
+    body {
+      background-color: #eee6ff;
+    }
+
+    .beverage-table {
+      border: 1px solid #0d1f2d;
+      width: 40%;
+      margin: auto;
+      border-collapse: collapse;
+    }
+
+
+
+    .beverage-table td, .beverage-table th {
+      font-size: 1.4em;
+      padding: 5px 10px;
+    }
+
+    .beverage-table tr:nth-child(odd) {
+      background-color: #d1e0e0;
+    }
+
+
+
+    </style>
   </head>
 
   <body>
     <header>
-      <h1>Riga</h1>
+      <h1>La Riga</h1>
     </header>
     <hr />
 
@@ -58,6 +92,29 @@
       $5.00
     </p>
 
+    <div>
+      <table class="beverage-table">
+          <tr>
+            <th colspan="2">Beverages</th>
+          </tr>
+          <tr>
+            <td>Topo Loco</td>
+            <td>$8.00</td>
+          </tr>
+          <tr>
+            <td>Craft Beer</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Veggie Water</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td>Red Coke</td>
+            <td>$2.00</td>
+          </tr>
+      </table>
+    </div>
 
 
 
