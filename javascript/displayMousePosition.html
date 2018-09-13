@@ -3,7 +3,7 @@
 <head>
     <script type="text/javascript" src="displayMousePosition.js"></script>
 </head>
-<body onclick="toggleTracking()" onmousemove="updateMousePosition";>
+<body onload="toggleTracking()" onclick="toggleTracking()" onmousemove="updateMousePosition();">
   <h1>Display the Mouse Position</h1>
   <p>Click anywhere on the page to toggle the mouse position tracking</p>
   <hr />
@@ -15,4 +15,4 @@
     <label>Mouse Y:</label><label id="mousePositionY"></label>
   </fieldset>
 </body>
-</html>   
+</html>
