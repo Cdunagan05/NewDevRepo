@@ -8,14 +8,23 @@ header {
   text-align: center;
   font-family: 'Rock Salt', cursive;
   font-size: 1.5em;
+  padding-top: 10px;
+}
+
+header h4 {
+  color: #009999;
 }
 
 footer {
   text-align: center;
 }
 
-.home-body {
+#home-body {
   background-color: #efe6ff;
+}
+
+nav ul li a {
+  font-size: 1.2em;
 }
 
 nav a {
@@ -32,4 +41,8 @@ nav a:visited {
 
 nav a:active {
   text-decoration: none;
+}
+
+.new-location-text {
+  padding-top: 10px;
 }

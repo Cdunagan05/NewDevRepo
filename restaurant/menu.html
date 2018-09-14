@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <style>
 
     b {
@@ -16,7 +17,7 @@
     }
 
     body {
-      background-color: #eee6ff;
+      background-color: #efe6ff;
     }
 
     .beverage-table {
@@ -26,8 +27,6 @@
       border-collapse: collapse;
     }
 
-
-
     .beverage-table td, .beverage-table th {
       font-size: 1.4em;
       padding: 5px 10px;
@@ -36,69 +35,86 @@
     .beverage-table tr:nth-child(odd) {
       background-color: #d1e0e0;
     }
-
-
-
     </style>
   </head>
 
   <body>
     <header>
       <h1>La Riga</h1>
+      <h4 class="new-location-text">New Location Coming Soon To Dallas, Texas!!!</h4>
     </header>
     <hr />
 
     <nav>
       <ul class="nav nav-pills nav-justified">
-        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html"><i class="fas fa-home"></i></a></li>
         <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
     <hr />
 
-    <p><b>Salisbary Steak</b><br />
-      A juicy Salisbary Steak served with
-      the best looking mashed potatoes and
-      cream gravy you've ever seen! Don't forget
-      to eat your green beans!<br />
-      $8.65
-    </p>
-    <p><b>Dunkeroos</b><br />
-      5 tiny crunchy breadsticks, with some
-      sprinkes on top, served with a side of
-      white icing to dip in!  Do you remember
-      these!?  We did!<br />
-      $12.12
-    </p>
-    <p><b>Five Torino Toquitos</b><br />
-      Grilled tasty chicken, wrapped in
-      a fried corn tortilla, with salsa
-      on the side as your dip.  Microwaved
-      to perfection!<br />
-      $9.00
-    </p>
-    <p><b>Soccer Sausages</b><br />
-      Perfectly cooked sausage, imported
-      all the way from Deutschland!  If you
-      love these sausages, it means you're
-      cultured!<br />
-      $3.00
-    </p>
-    <p><b>Poptarts</b><br />
-      We put these in a state of the
-      art toaster, which can only be
-      controlled by our phones!  Served
-      with a glass of orange juice. You'll
-      Love it!<br />
-      $15.55
-    </p>
-    <p><b>Pizza</b><br />
-      Pizza is always in style, and you'll
-      love our pizza.  It's only served with
-      pineapples.<br />
-      $5.00
-    </p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p><b>Salisbary Steak</b><br />
+          A juicy Salisbary Steak served with
+          the best looking mashed potatoes and
+          cream gravy you've ever seen! Don't forget
+          to eat your green beans!<br />
+          $8.65
+        </p>
+      </div>
+      <div class="col-sm">
+        <p><b>Dunkeroos</b><br />
+          5 tiny crunchy breadsticks, with some
+          sprinkes on top, served with a side of
+          white icing to dip in!  Do you remember
+          these!?  We did!<br />
+          $12.12
+        </p>
+      </div>
+      <div class="col-sm">
+        <p><b>Five Torino Toquitos</b><br />
+          Grilled tasty chicken, wrapped in
+          a fried corn tortilla, with salsa
+          on the side as your dip.  Microwaved
+          to perfection!<br />
+          $9.00
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <p><b>Soccer Sausages</b><br />
+          Perfectly cooked sausage, imported
+          all the way from Deutschland!  If you
+          love these sausages, it means you're
+          cultured!<br />
+          $3.00
+        </p>
+      </div>
+      <div class="col-sm">
+        <p><b>Poptarts</b><br />
+          We put these in a state of the
+          art toaster, which can only be
+          controlled by our phones!  Served
+          with a glass of orange juice. You'll
+          Love it!<br />
+          $15.55
+        </p>
+      </div>
+      <div class="col-sm">
+        <p><b>Pizza</b><br />
+          Pizza is always in style, and you'll
+          love our pizza.  It's only served with
+          pineapples.<br />
+          $5.00
+        </p>
+      </div>
+    </div>
+  </div>
 
     <div>
       <table class="beverage-table">
