@@ -8,6 +8,26 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <style>
+      .dollar-sign {
+        display: inline-block;
+        position: relative;
+      }
+
+      .dollar-sign {
+        padding-left: 2px;
+      }
+
+      .dollar-sign:before {
+        position: absolute;
+        content: "$";
+        left: 5px;
+        top: 7px;
+      }
+    </style>
+
+
+
   </head>
   <body>
 
@@ -19,7 +39,7 @@
     <form name="gameForm" onsubmit="playLuckySevens();">
       <div class="form-group row">
         <label for="bet" class="col-sm-2 col-form-label">Starting Bet:</label>
-        <div class="col-sm-4">
+        <div class="col-sm-2 dollar-sign">
           <input type="number" class="form-control" id="bet">
         </div>
       </div>
