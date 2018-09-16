@@ -1,4 +1,11 @@
 
+//The way the instructions are worded, it sounded like it wanted a question to be asked to the user before
+//they entered the number into the field.  So that's why this is here.  
+function askUser() {
+  alert ("How much money do you have to bet?  Please enter it in the appropriate field to play!")
+};
+
+
 function playLuckySevens() {
   var num = document.forms["gameForm"]["bet"].value;
   var i = 0;
@@ -49,4 +56,4 @@ function rollDice() {
   dice2 = Math.floor(Math.random() * 6) + 1
 
   return dice1 + dice2;
-}
+};
