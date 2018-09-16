@@ -27,11 +27,27 @@
         top: 7px;
       }
 
-      body {
-        background-image: url("images/chip-cube-dice-187333.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+      table tr:nth-child(even) {
+        background-color: black;
+        color: white;
       }
+
+      table {
+        font-size: 1.0em;
+        font-weight: bold;
+      }
+
+      .game {
+        width: 400px;
+        padding-top: 10px;
+      }
+
+      header {
+        text-align: center;
+      }
+
+
+
     </style>
 
 
@@ -39,24 +55,28 @@
   </head>
   <body>
 
-  <header>
-    <h1>Lucky Sevens</h1>
-  </header>
+    <div class="container game">
+      <header>
+        <h1>Lucky Sevens</h1>
+      </header>
 
-  <div class="container">
     <form name="gameForm" onsubmit="return playLuckySevens();">
       <div class="form-group row">
-        <label for="bet" class="col-sm-2 col-form-label">Starting Bet:</label>
-        <div class="col-sm-2 dollar-sign">
+        <label for="bet" class="col-sm-6 col-form-label">Starting Bet:</label>
+        <div class="col-sm-6 dollar-sign">
           <input type="number" class="form-control" id="bet">
         </div>
       </div>
-      <div class="form-group row">
-        <button type="submit" id="submitButton" class="btn btn-primary col-sm-2 col-form-label">Play</button>
+      <div class="form-group row" style="padding-left:1.5%;">
+        <button type="submit" id="submitButton" class="btn btn-primary col-sm-4 col-form-label" style="margin-left:auto; margin-right:auto;">Play</button>
       </div>
     </form>
 
-    <table id="results" class="table table-striped" style="display:none;">
+    <hr id="line-for-results" style="display:none;"/>
+
+    <h2 id="results-text" style="display:none; text-align:center;">Results</h2>
+
+    <table id="results" class="table table-striped" style="display:none; padding-left:10px;">
       <tr>
         <td>Starting Bet</td>
         <td><span id="startingBet"></span></td>

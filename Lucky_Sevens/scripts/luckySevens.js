@@ -3,8 +3,7 @@ function askUser() {
 }
 
 function playLuckySevens() {
-  var stringNumber = document.forms["gameForm"]["bet"].value;
-  var num = parseInt(stringNumber, 10);
+  var num = document.forms["gameForm"]["bet"].value;
   var i = 0;
   var highest = [num];
   var count = 0
@@ -13,7 +12,7 @@ function playLuckySevens() {
     document.forms["gameForm"]["bet"].focus();
     return false;
   } else {
-    newNum = num;
+    newNum = parseInt(num, 10);
     while (newNum > 0) {
       dice = rollDice();
       if (dice == 7) {
@@ -24,6 +23,7 @@ function playLuckySevens() {
         newNum = (newNum - 1);
         highest.push(newNum);
         i++
+        debugger;
       }
     }
   }
@@ -38,6 +38,8 @@ function playLuckySevens() {
     }
   }
 
+  document.getElementById("line-for-results").style.display = "block";
+  document.getElementById("results-text").style.display = "block";
   document.getElementById("results").style.display = "block";
   document.getElementById("startingBet").innerText = "$" + num;
   document.getElementById("totalRolls").innerText = i;
