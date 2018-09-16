@@ -1,6 +1,3 @@
-function askUser() {
-  alert ("How much money do you have to bet?  Please enter an amount where it says 'Starting Bet'");
-}
 
 function playLuckySevens() {
   var num = document.forms["gameForm"]["bet"].value;
@@ -23,7 +20,6 @@ function playLuckySevens() {
         newNum = (newNum - 1);
         highest.push(newNum);
         i++
-        debugger;
       }
     }
   }
